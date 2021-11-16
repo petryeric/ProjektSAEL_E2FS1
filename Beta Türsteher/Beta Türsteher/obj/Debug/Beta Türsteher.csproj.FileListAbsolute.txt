@@ -1,0 +1,7 @@
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\bin\Debug\Beta Türsteher.exe.config
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\bin\Debug\Beta Türsteher.exe
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\bin\Debug\Beta Türsteher.pdb
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\obj\Debug\Beta Türsteher.csprojAssemblyReference.cache
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\obj\Debug\Beta Türsteher.csproj.CoreCompileInputs.cache
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\obj\Debug\Beta Türsteher.exe
+C:\Users\LucaEßlinger\source\repos\Beta Türsteher\Beta Türsteher\obj\Debug\Beta Türsteher.pdb
