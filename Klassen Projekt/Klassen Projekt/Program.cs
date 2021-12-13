@@ -8,15 +8,6 @@ using System.Linq;
 
 namespace Klassen_Projekt
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-
-
     class Kunde
     {   //Attribute
         private string name;
@@ -48,7 +39,7 @@ namespace Klassen_Projekt
 
         //Main Methode
         static void Main(string[] args) {
-            Kunde pers = new Kunde("Tim Mustermann", 25, 2, 2500, 12345);
+            Kunde pers = new Kunde("Tim Mustermann", 25, 2, 2500, 12345,1234);
             pers.Abheben(ref pers.kundennummer, 25);
             Console.ReadKey();
         }
@@ -107,5 +98,14 @@ namespace Klassen_Projekt
 
         }
 
+        public int Überweisung(int Betrag, string IBAN, ref String Name)
+        {
+            Console.WriteLine("Es werden " + Betrag + " € an den Empfänger überwiesen");
+
+            Kapital -= Betrag;
+
+
+
+        }
     }
 }
