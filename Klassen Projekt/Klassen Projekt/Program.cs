@@ -24,14 +24,17 @@ namespace Klassen_Projekt
         private int anzahlKonten;
         private int kapital;
         private int kundennummer;
+        private int pin;
 
-        public Kunde(string name, int alter, int anzahlKonten, int kapital, int kundennummer)
+        
+        public Kunde(string name, int alter, int anzahlKonten, int kapital, int kundennummer, int pin)
         {
             this.name = name;
             this.alter = alter;
             this.anzahlKonten = anzahlKonten;
             this.kapital = kapital;
             this.kundennummer = kundennummer;
+            this.pin = pin;
         }
 
         public string Name { get => name; set => name = value; }
@@ -39,12 +42,14 @@ namespace Klassen_Projekt
         public int AnzahlKonten { get => anzahlKonten; set => anzahlKonten = value; }
         public int Kapital { get => kapital; set => kapital = value; }
         public int Kundennummer { get => kundennummer; set => kundennummer = value; }
+        public int Pin { get => pin; set => pin = value; }
 
 
 
         //Main Methode
         static void Main(string[] args) {
             Kunde pers = new Kunde("Tim Mustermann", 25, 2, 2500, 12345);
+            pers.Abheben(ref pers.kundennummer, 25);
             Console.ReadKey();
         }
 
@@ -58,7 +63,7 @@ namespace Klassen_Projekt
 
             Console.WriteLine("Geben Sie Ihre Pin ein");
             int Pin = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Wählen Sie die Summe aus");
+           
 
             switch (summe) {
                 case 5:
@@ -92,11 +97,13 @@ namespace Klassen_Projekt
 
             if(Kapital < summe)
             {
-                Console.WriteLine("Ihr Konto ist nicht genügend gedeckt, Ihre Karte wird ausgegeben");
+                String ErrorMessage = "Ihr Konto ist nicht genügend gedeckt, Ihre Karte wird ausgegeben";
+
+                return Convert.ToInt32(ErrorMessage); 
                 
             }
 
-            Console.WriteLine("Ihr neues Saldo  beträgt " + Kapital);
+            return Kapital;
 
         }
 
