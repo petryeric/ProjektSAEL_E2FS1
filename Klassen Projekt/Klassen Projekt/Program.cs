@@ -100,12 +100,18 @@ namespace Klassen_Projekt
 
         public int Überweisung(int Betrag, string IBAN, ref String Name)
         {
-            Console.WriteLine("Es werden " + Betrag + " € an den Empfänger überwiesen");
+            Console.WriteLine("Es werden " + Betrag + " € an den Empfänger " + IBAN + "überwiesen");
 
             Kapital -= Betrag;
 
+            return Kapital;}
 
+        public int Überweisung(int Betrag,String Empfänger, ref String Name,char Indikator)
+        {
+            Console.WriteLine("Es werden " + Betrag + " € vom Empfänger " + Name + "empfangen"); 
+            Kapital += Betrag;
 
+            return Kapital;
         }
     }
 }
