@@ -19,18 +19,32 @@ namespace Klassen_Projekt
 
     class Kunde
     {   //Eigenschaften
-        private string Name;
-        private int Alter;
-        private int AnzahlKonten;
-        private int Kapital;
-        
+        private string name;
+        private int alter;
+        private int anzahlKonten;
+        private int kapital;
+        private int kundennummer;
+
+        public Kunde(string name, int alter, int anzahlKonten, int kapital, int kundennummer)
+        {
+            this.name = name;
+            this.alter = alter;
+            this.anzahlKonten = anzahlKonten;
+            this.kapital = kapital;
+            this.kundennummer = kundennummer;
+        }
+
+        public string Name { get => name; set => name = value; }
+        public int Alter { get => alter; set => alter = value; }
+        public int AnzahlKonten { get => anzahlKonten; set => anzahlKonten = value; }
+        public int Kapital { get => kapital; set => kapital = value; }
+        public int Kundennummer { get => kundennummer; set => kundennummer = value; }
+
 
 
         //Main Methode
         static void Main(string[]args){
-            Kunde pers = new Kunde();
-            pers.Name = "Tim Mustermann";
-            pers.Bankkartennummer();
+            Kunde pers = new Kunde("Tim Mustermann",25,2,2500) ;
             Console.ReadKey();
         }
         
@@ -39,7 +53,7 @@ namespace Klassen_Projekt
        
 
         //Methode
-         public string Name { get; set; }
+         
         public void Bankkartennummer()
         { 
             
