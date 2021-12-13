@@ -18,21 +18,26 @@ namespace Klassen_Projekt
 
 
     class Kunde
-    {
+    {   //Eigenschaften
+        private string Name;
+
+        //Main Methode
         static void Main(string[]args){
             Kunde pers = new Kunde();
             pers.Name = "Tim Mustermann";
             pers.Bankkartennummer();
             Console.ReadKey();
         }
-        //Eigenschaften
-        public string Name { get; set; }
+        
+       
         
        
 
         //Methode
+         public string Name { get; set; }
         public void Bankkartennummer()
         { 
+            
             Console.WriteLine("DE" + "48465194651746558");
         }
         
