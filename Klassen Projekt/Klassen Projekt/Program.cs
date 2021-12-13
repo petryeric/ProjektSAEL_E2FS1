@@ -12,16 +12,19 @@ namespace Klassen_Projekt
     {
         static void Main(string[] args)
         {
-            Kunde pers = new Kunde();
-            pers.Name = "Tim Mustermann";
-            pers.Bankkartennummer();
-            Console.ReadKey();
+           
         }
     }
 
 
     class Kunde
     {
+        static void Main(string[]args){
+            Kunde pers = new Kunde();
+            pers.Name = "Tim Mustermann";
+            pers.Bankkartennummer();
+            Console.ReadKey();
+        }
         //Eigenschaften
         public string Name { get; set; }
         
