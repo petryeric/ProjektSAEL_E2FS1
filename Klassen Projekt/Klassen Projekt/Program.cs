@@ -113,5 +113,17 @@ namespace Klassen_Projekt
 
             return Kapital;
         }
+
+        public int Kontoeröffnung(int Anzahl,ref int Kundennummer)
+        {
+            AnzahlKonten += Anzahl;
+
+            return AnzahlKonten;
+
+        }
+        
+
+
+        
     }
 }
