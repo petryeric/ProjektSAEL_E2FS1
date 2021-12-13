@@ -16,6 +16,7 @@ namespace Klassen_Projekt
         private int kapital;
         private int kundennummer;
         private int pin;
+        
 
         
         public Kunde(string name, int alter, int anzahlKonten, int kapital, int kundennummer, int pin)
@@ -116,9 +117,16 @@ namespace Klassen_Projekt
 
         public int Kontoeröffnung(int Anzahl,ref int Kundennummer)
         {
-            AnzahlKonten += Anzahl;
+            if(Alter < 18)
+            {
+                String ErrorMessage = "Sie sind nicht authorisiert ein Konto zu eröffnen";
+                return Convert.ToInt32(ErrorMessage);
+            }
+            else {
+                AnzahlKonten += Anzahl;
 
-            return AnzahlKonten;
+                return AnzahlKonten;
+            }
 
         }
         
