@@ -20,6 +20,11 @@ namespace Klassen_Projekt
     class Kunde
     {   //Eigenschaften
         private string Name;
+        private int Alter;
+        private int AnzahlKonten;
+        private int Kapital;
+        
+
 
         //Main Methode
         static void Main(string[]args){
