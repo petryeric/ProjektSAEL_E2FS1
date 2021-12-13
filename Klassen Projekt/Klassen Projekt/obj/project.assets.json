@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\LucaEßlinger\\.nuget\\packages\\": {}
+    "C:\\Users\\EricPetry\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LucaEßlinger\\source\\repos\\Klassen Projekt\\Klassen Projekt\\Klassen Projekt.csproj",
+      "projectUniqueName": "C:\\Users\\EricPetry\\Source\\Repos\\ProjektSAEL_E2FS1\\Klassen Projekt\\Klassen Projekt\\Klassen Projekt.csproj",
       "projectName": "Klassen Projekt",
-      "projectPath": "C:\\Users\\LucaEßlinger\\source\\repos\\Klassen Projekt\\Klassen Projekt\\Klassen Projekt.csproj",
-      "packagesPath": "C:\\Users\\LucaEßlinger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LucaEßlinger\\source\\repos\\Klassen Projekt\\Klassen Projekt\\obj\\",
+      "projectPath": "C:\\Users\\EricPetry\\Source\\Repos\\ProjektSAEL_E2FS1\\Klassen Projekt\\Klassen Projekt\\Klassen Projekt.csproj",
+      "packagesPath": "C:\\Users\\EricPetry\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EricPetry\\Source\\Repos\\ProjektSAEL_E2FS1\\Klassen Projekt\\Klassen Projekt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LucaEßlinger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EricPetry\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
