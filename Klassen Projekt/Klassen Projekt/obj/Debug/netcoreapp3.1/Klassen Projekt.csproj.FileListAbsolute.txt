@@ -11,3 +11,9 @@ C:\Users\LucaEßlinger\source\repos\Klassen Projekt\Klassen Projekt\obj\Debug\ne
 C:\Users\LucaEßlinger\source\repos\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.dll
 C:\Users\LucaEßlinger\source\repos\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.pdb
 C:\Users\LucaEßlinger\source\repos\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.genruntimeconfig.cache
+C:\Users\EricPetry\Source\Repos\ProjektSAEL_E2FS1\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.csprojAssemblyReference.cache
+C:\Users\EricPetry\Source\Repos\ProjektSAEL_E2FS1\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.AssemblyInfoInputs.cache
+C:\Users\EricPetry\Source\Repos\ProjektSAEL_E2FS1\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.AssemblyInfo.cs
+C:\Users\EricPetry\Source\Repos\ProjektSAEL_E2FS1\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.csproj.CoreCompileInputs.cache
+C:\Users\EricPetry\Source\Repos\ProjektSAEL_E2FS1\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.dll
+C:\Users\EricPetry\Source\Repos\ProjektSAEL_E2FS1\Klassen Projekt\Klassen Projekt\obj\Debug\netcoreapp3.1\Klassen Projekt.pdb

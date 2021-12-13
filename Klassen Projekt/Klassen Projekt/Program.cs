@@ -12,13 +12,13 @@ namespace Klassen_Projekt
     {
         static void Main(string[] args)
         {
-           
+
         }
     }
 
 
     class Kunde
-    {   //Eigenschaften
+    {   //Attribute
         private string name;
         private int alter;
         private int anzahlKonten;
@@ -43,23 +43,62 @@ namespace Klassen_Projekt
 
 
         //Main Methode
-        static void Main(string[]args){
-            Kunde pers = new Kunde("Tim Mustermann",25,2,2500) ;
+        static void Main(string[] args) {
+            Kunde pers = new Kunde("Tim Mustermann", 25, 2, 2500, 12345);
             Console.ReadKey();
         }
-        
-       
-        
-       
+
+
+
+
 
         //Methode
-         
-        public void Bankkartennummer()
-        { 
-            
-            Console.WriteLine("DE" + "48465194651746558");
+
+        public int Abheben(ref int Kundennummer,int summe) {
+
+            Console.WriteLine("Geben Sie Ihre Pin ein");
+            int Pin = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Wählen Sie die Summe aus");
+
+            switch (summe) {
+                case 5:
+                    summe = 5;
+                    Console.WriteLine("Es werden 5€ ausgegeben");
+                    break;
+                case 10:
+                    summe = 10;
+                    Console.WriteLine("Es werden 10€ ausgegeben");
+                    break;
+                case 20:
+                    summe = 20;
+                    Console.WriteLine("Es werden 20€ ausgegeben");
+                    break;
+                case 50:
+                    summe = 50;
+                    Console.WriteLine("Es werden 5€ ausgegeben");
+                    break;
+                case 100:
+                    summe = 100;
+                    Console.WriteLine("Es werden 100€ ausgegeben");
+                    break;
+                case 200:
+                    summe = 200;
+                    Console.WriteLine("Es werden 200€ ausgegeben");
+                    break;
+            }
+                
+
+            Kapital -= summe;
+
+            if(Kapital < summe)
+            {
+                Console.WriteLine("Ihr Konto ist nicht genügend gedeckt, Ihre Karte wird ausgegeben");
+                
+            }
+
+            Console.WriteLine("Ihr neues Saldo  beträgt " + Kapital);
+
         }
-        
 
     }
 }
