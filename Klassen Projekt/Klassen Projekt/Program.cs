@@ -29,7 +29,7 @@ namespace Klassen_Projekt
             this.pin = pin;
         }
 
-        //Attribute für die Klasse Kunde setzen
+        //get und set Methoden für die Attribute
         public string Name { get => name; set => name = value; }
         public int Alter { get => alter; set => alter = value; }
         public int AnzahlKonten { get => anzahlKonten; set => anzahlKonten = value; }
@@ -39,7 +39,7 @@ namespace Klassen_Projekt
 
 
 
-        //Main Methode ertsellt mit den Atributen von Kunde
+        //Main Methode
         static void Main(string[] args) {
             Kunde pers = new Kunde("Tim Mustermann", 25, 2, 2500, 12345,1234);
             pers.Abheben(ref pers.kundennummer, 25);
@@ -50,7 +50,7 @@ namespace Klassen_Projekt
 
 
 
-        //Methode Abheben erstellt mit Auswahlmöglichkeiten
+        //Methode zur S
 
         public int Abheben(ref int Kundennummer,int summe) {
 
@@ -85,10 +85,10 @@ namespace Klassen_Projekt
                     break;
             }
                 
-            // Die abgehobene Summe wird vom Konta (Kapital) abgezogen
+            // Die abgehobene Summe wird vom Kapital abgezogen
             Kapital -= summe;
 
-            // Wird geprüft ob man überhaupt noch genügend Geld auf dem Konto hat, wenn nein kommt eine Fehlermeldung
+            //Prüfung ob Konto gedeckt ist
             if(Kapital < summe)
             {
                 String ErrorMessage = "Ihr Konto ist nicht genügend gedeckt, Ihre Karte wird ausgegeben";
@@ -101,7 +101,7 @@ namespace Klassen_Projekt
 
         }
 
-        // Methode Überweisung erstellt was man überweisen will und an wenn (Wird vom Sender abgezogen)
+        // Methode Überweisung, Parameter bestimmen Betrag und Empfänger
         public int Überweisung(int Betrag, string IBAN, ref String Name)
         {
             Console.WriteLine("Es werden " + Betrag + " € an den Empfänger " + IBAN + "überwiesen");
@@ -110,7 +110,7 @@ namespace Klassen_Projekt
 
             return Kapital;}
 
-        // Methode Überweisung erstellt was man überweisen will und an wenn (Wird dem Empfänger auf sein Kapital draufgerechnet)
+        //ethode Überweisung, Parameter vestimmen Betrag und Empfänger, Indikator für Unterscheidung zur anderen Methode
         public int Überweisung(int Betrag,String Empfänger, ref String Name,char Indikator)
         {
             Console.WriteLine("Es werden " + Betrag + " € vom Empfänger " + Name + "empfangen"); 
