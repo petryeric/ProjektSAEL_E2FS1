@@ -18,7 +18,7 @@ namespace Klassen_Projekt
         private int pin;
         
 
-        
+        //Erstellt die Klasse Kunde
         public Kunde(string name, int alter, int anzahlKonten, int kapital, int kundennummer, int pin)
         {
             this.name = name;
@@ -29,6 +29,7 @@ namespace Klassen_Projekt
             this.pin = pin;
         }
 
+        //Attribute für die Klasse Kunde setzen
         public string Name { get => name; set => name = value; }
         public int Alter { get => alter; set => alter = value; }
         public int AnzahlKonten { get => anzahlKonten; set => anzahlKonten = value; }
@@ -38,7 +39,7 @@ namespace Klassen_Projekt
 
 
 
-        //Main Methode
+        //Main Methode ertsellt mit den Atributen von Kunde
         static void Main(string[] args) {
             Kunde pers = new Kunde("Tim Mustermann", 25, 2, 2500, 12345,1234);
             pers.Abheben(ref pers.kundennummer, 25);
@@ -49,7 +50,7 @@ namespace Klassen_Projekt
 
 
 
-        //Methode
+        //Methode Abheben erstellt mit Auswahlmöglichkeiten
 
         public int Abheben(ref int Kundennummer,int summe) {
 
@@ -84,9 +85,10 @@ namespace Klassen_Projekt
                     break;
             }
                 
-
+            // Die abgehobene Summe wird vom Konta (Kapital) abgezogen
             Kapital -= summe;
 
+            // Wird geprüft ob man überhaupt noch genügend Geld auf dem Konto hat, wenn nein kommt eine Fehlermeldung
             if(Kapital < summe)
             {
                 String ErrorMessage = "Ihr Konto ist nicht genügend gedeckt, Ihre Karte wird ausgegeben";
@@ -99,6 +101,7 @@ namespace Klassen_Projekt
 
         }
 
+        // Methode Überweisung erstellt was man überweisen will und an wenn (Wird vom Sender abgezogen)
         public int Überweisung(int Betrag, string IBAN, ref String Name)
         {
             Console.WriteLine("Es werden " + Betrag + " € an den Empfänger " + IBAN + "überwiesen");
@@ -107,6 +110,7 @@ namespace Klassen_Projekt
 
             return Kapital;}
 
+        // Methode Überweisung erstellt was man überweisen will und an wenn (Wird dem Empfänger auf sein Kapital draufgerechnet)
         public int Überweisung(int Betrag,String Empfänger, ref String Name,char Indikator)
         {
             Console.WriteLine("Es werden " + Betrag + " € vom Empfänger " + Name + "empfangen"); 
@@ -115,6 +119,7 @@ namespace Klassen_Projekt
             return Kapital;
         }
 
+        // Methode Kontoeröffnung erstellt mit der Prüfung ob man berechtigt ist ein Konto zu eröffnen
         public int Kontoeröffnung(int Anzahl,ref int Kundennummer)
         {
             if(Alter < 18)
