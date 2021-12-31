@@ -1,6 +1,6 @@
-﻿using System;
+﻿         using System;
 
-public class Bank
+public abstract class Bank
 {
 
 	private int anzahlMitarbeiter;
@@ -12,25 +12,20 @@ public class Bank
 
     public Bank(int anzahlMitarbeiter, int anzahlFilialen,string aktuelleFiliale, int gesamtVermögen, bool isHauptFiliale )
     {
-		this.anzahlMitarbeiter = anzahlMitarbeiter;
-		this.anzahlFilialen = anzahlFilialen;
-		this.aktuelleFiliale = aktuelleFiliale;
-		this.gesamtVermögen = gesamtVermögen;
-		this.isHauptfiliale = isHauptFiliale;
-
-
-
+		this.AnzahlMitarbeiter = anzahlMitarbeiter;
+		this.AnzahlFilialen = anzahlFilialen;
+		this.AktuelleFiliale = aktuelleFiliale;
+		this.GesamtVermögen = gesamtVermögen;
+		this.IsHauptfiliale = isHauptFiliale;
     }
 
+    public int AnzahlMitarbeiter { get => anzahlMitarbeiter; set => anzahlMitarbeiter = value; }
+    public int AnzahlFilialen { get => anzahlFilialen; set => anzahlFilialen = value; }
+    public string AktuelleFiliale { get => aktuelleFiliale; set => aktuelleFiliale = value; }
+    public int GesamtVermögen { get => gesamtVermögen; set => gesamtVermögen = value; }
+    public bool IsHauptfiliale { get => isHauptfiliale; set => isHauptfiliale = value; }
 
-	public object Filialeröffnung(int Baukosten, String Standort, int Fläche;)
-    {
-		Bank BankFiliale = new Bank();
-		return 
-
-    Bank;
-
-    }
+    
 	
 
 }

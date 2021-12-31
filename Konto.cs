@@ -2,10 +2,18 @@
 
 public abstract class Konto
 {
+
+    
 	private int Saldo;
 	private String Kontoinhaber;
 	private String IBAN;
 
+    public Konto(int Saldo, string Kontoinhaber, string IBAN)
+    {
+        this.Saldo = Saldo;
+        this.Kontoinhaber = Kontoinhaber;
+        this.IBAN = IBAN;
+    }
 
 
     public int saldo{ get => Saldo; set => Saldo = value; }
@@ -15,6 +23,12 @@ public abstract class Konto
 
 public class Girokonto: Konto
 {
+    public Girokonto(int Saldo, string Kontoinhaber, string IBAN)
+    {
+        base.saldo = Saldo;
+        base.kontoinhaber = Kontoinhaber;
+        base.IBAN1 = IBAN;
+    }
     static void Main(string[] args)
     {
 
@@ -67,6 +81,12 @@ public class Girokonto: Konto
 
 public class Sparkonto: Konto
 {
+    public Sparkonto(int Saldo, string Kontoinhaber, string IBAN)
+    {
+        base.saldo = Saldo;
+        base.kontoinhaber = Kontoinhaber;
+        base.IBAN1 = IBAN;
+    }
     static void Main(string[] args)
     {
 
