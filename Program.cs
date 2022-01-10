@@ -18,7 +18,7 @@ namespace Klassen_Projekt
         private int pin;
         
 
-        //Erstellt die Klasse Kunde
+        //Konstruktor der Klasse Kunde
         public Kunde(string name, int alter, int anzahlKonten, int kapital, int kundennummer, int pin)
         {
             this.name = name;
@@ -50,7 +50,7 @@ namespace Klassen_Projekt
 
 
 
-        //Methode zur S
+        //Methode zur Simulation eines Geldautomaten, Angegebene Summe löst switch-case aus
 
         public int Abheben(ref int Kundennummer,int summe) {
 
@@ -110,7 +110,7 @@ namespace Klassen_Projekt
 
             return Kapital;}
 
-        //ethode Überweisung, Parameter vestimmen Betrag und Empfänger, Indikator für Unterscheidung zur anderen Methode
+        //Überladene Methode Überweisung, Parameter vestimmen Betrag und Empfänger, Indikator für Unterscheidung zur anderen Methode
         public int Überweisung(int Betrag,String Empfänger, ref String Name,char Indikator)
         {
             Console.WriteLine("Es werden " + Betrag + " € vom Empfänger " + Name + "empfangen"); 
