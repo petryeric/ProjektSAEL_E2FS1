@@ -1,5 +1,6 @@
 ﻿using System;
 
+// Erstelle die Klasse Konto
 public abstract class Konto
 {
 
@@ -8,6 +9,7 @@ public abstract class Konto
 	private String Kontoinhaber;
 	private String IBAN;
 
+    // Objekte der Klasse Konto erstellt
     public Konto(int Saldo, string Kontoinhaber, string IBAN)
     {
         this.Saldo = Saldo;
@@ -15,14 +17,16 @@ public abstract class Konto
         this.IBAN = IBAN;
     }
 
-
+    // Klasse Konto mit Inhalt füllen
     public int saldo{ get => Saldo; set => Saldo = value; }
     public string kontoinhaber { get => Kontoinhaber; set => Kontoinhaber = value; }
     public string IBAN1 { get => IBAN; set => IBAN = value; }
 }
 
+// Erstelle die Klasse Girokonto
 public class Girokonto: Konto
-{
+
+{   // Objekte der Klasse Konto erstellt
     public Girokonto(int Saldo, string Kontoinhaber, string IBAN)
     {
         base.saldo = Saldo;
@@ -57,7 +61,7 @@ public class Girokonto: Konto
         return saldo;
     }
 
-
+    // Erstelle die Methode Überweisung (Betrag wird vom Kontoinhaber abgezogen)
     public int Überweisung(int Betrag, string IBAN, ref String Kontoinhaber)
     {
         Console.WriteLine("Es werden " + Betrag + " € an den Empfänger " + IBAN + "überwiesen");
@@ -66,7 +70,7 @@ public class Girokonto: Konto
 
         return saldo;
     }
-
+    // Erstelle die Methode Überweisung (Betrag wird auf Empfänger sein Konto dazugerechnet)
     public int Überweisung(int Betrag, String Empfänger, ref String Kontoinhaber, char Indikator)
     {
         Console.WriteLine("Es werden " + Betrag + " € vom Empfänger " + Name + "empfangen");
@@ -79,8 +83,10 @@ public class Girokonto: Konto
 
 }
 
+// Erstelle die Methode Sparkonto
 public class Sparkonto: Konto
 {
+    // Objekte der Klasse Konto erstellt
     public Sparkonto(int Saldo, string Kontoinhaber, string IBAN)
     {
         base.saldo = Saldo;
@@ -92,6 +98,7 @@ public class Sparkonto: Konto
 
     }
 
+    // Erstelle die Klasse Zinssatz
     private double Zinssatz;
 
     public double zinssatz { get => Zinssatz; set => Zinssatz = value; }
